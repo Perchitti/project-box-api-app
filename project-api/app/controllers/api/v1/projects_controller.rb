@@ -17,6 +17,13 @@ module Api
             end
           end 
 
+          def update
+            @project = Project.find(params[:id])
+            @project.addLike
+            @project.save
+            render json: @project.id
+          end
+
           def show
             render json: @project = Project.find(params[:id]) 
           end 
@@ -33,7 +40,7 @@ module Api
           end 
     
           def project_params
-            params.permit(:title, :content, :studio, :location, :genre)
+            params.permit(:title, :content, :studio, :location, :genre, :like)
           end 
 
       end 
