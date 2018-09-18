@@ -20,6 +20,7 @@ cd into project-front <br>
 Run npm i <br>
 To start the server, npm run start <br>
 In your browser, go to https://localserver:3000
+Main Files are located in project-front > dev > js
 
 Terminal 2:
 Clone this repo in your terminal: <br>
