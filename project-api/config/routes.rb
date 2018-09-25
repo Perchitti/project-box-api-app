@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 namespace :api do
   namespace :v1 do
 resources :projects
+ #put '/api/v1/projects/:id' to: 'projects#update'
   end
   end
 end
